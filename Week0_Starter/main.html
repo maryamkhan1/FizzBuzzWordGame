@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FizzBuzz Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- We are going to make a variation of the FizzBuzz counting game -->
+    <div class="header">
+        <h1> Hi! Welcome to FizzBuzz</h1>
+        <h3> This web application is a fun twist on the FizzBuzz word game.</h3>
+    </div>
+
+    <!-- Include a description of the rules of the game -->
+    <div class="container">
+        <h4>The rules are as follows:</h4>
+        <ul>
+            <li>For a word length divisible by 3, we will display "Fizz". </li>
+            <li>For a word length divisible by 5, we will display "Buzz". </li>
+            <li>For a word length divisible by 3 and 5, we will display "FizzBuzz". </li>
+
+
+        </ul>
+
+        <br>
+
+        <!-- Get user input of a word. We will do so by using a form -->
+        <form id="fizzBuzzForm">
+            <label for="word">Enter a Word:</label>
+            <input type="text" id="word" required>
+            <button type="button" onclick="runFizzBuzz()">Enter</button>
+
+
+
+        </form>
+
+        <div id="results"></div>
+
+
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
